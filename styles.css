@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVIGATION TAGS */
+
+header {
+    background-color: #1A1A1A;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Updated height to medium */
+    background-color: #333333; /* Updated background color */
+}
+
+nav h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #E8AA42;
+    margin: 0;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-weight: bolder;
+    margin: 40px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav h2{
+    margin:40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+    position: relative  ;
+}
+
+nav ul li a:hover {
+    color: rgb(207, 151, 61);
+}
+
+/* card section */
+.card {
+    background-color: #FFE7CE;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #0E2954;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.card li {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Another card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card1 {
+    color: #0c0b0b;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.card1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("pic1.png");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("pic3.png");
+    min-height: 400px;
+  }
+  
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  h2 {
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+    font: 20px "Lato", verdana;
+    color: #111;
+  }
+
+
+
+
+
+  
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+
+
+
+
+
+
+
+
+/* HERE PARALLAX EFFECT STARTS */
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("pic2.png");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+}
+
+
+/* DESCRIPTION */
+.gradient-bg {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+}
+
+.gradient-bg .div {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.gradient-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(to bottom right, #ff00cc, #3333ff); */
+    background: white;
+    /* Replace the color values with your desired gradient colors */
+    z-index: -1;
+}
+
+.content {
+    /* Additional styles for the main content */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* HERE FOOTER STARTS */
+footer {
+    background-color: #213555;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 160px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.footer ul :hover {
+    list-style-type: none;
+    margin-bottom: 12px;
+    color: #116A7B;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer li {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+.footer-text {
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+.footer-first :hover {
+    color: #116A7B;
+
+}
+
+
+
+.gradient-bg {
+    background: linear-gradient(to bottom, #e6e6e6, #fff);
+    padding: 20px;
+}
+
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.review h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    line-height: 1.6;
+}
